@@ -24,7 +24,6 @@ import tabPanel from '@/gene/components/tabSlide/tab-panel.vue'
 import StatusBlock from './components/statusBlock/index.vue'
 import NoData from './components/noData/index.vue'
 import dmView from 'dmview/index'
-import { mapActions, mapGetters } from 'vuex'
 // import { orderListData } from '@/gene/api/moduData.js';
 export default {
   components: {
@@ -49,10 +48,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters([
-      'loading',
-      'orderList'
-    ]),
+
     scrollTop () {
       return $(document).scrollTop()
     }
@@ -67,7 +63,6 @@ export default {
     this.changeSlide(this.start)
   },
   methods: {
-    ...mapActions(['changeLoading', 'queryOrderList']),
     changeSlide (index) {
       $('.content-item').css('height', 0)
       $('.contentItem' + index).css('height', 'auto')

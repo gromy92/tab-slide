@@ -3,7 +3,6 @@
         <tab-slide
         :start="0"
         :overFlowScroll="false"
-        :tabWidth="70"
         @changeSlide="changeSlide"
         >
             <tab-panel :lable="panel.text" :index="index" v-for="(panel,index) in tabData" ref="scroll" :key="index">
