@@ -26,9 +26,9 @@ export default {
     return {
       tabData: [
         { status: -1, text: '全部', data: [], loadFinish: false },
-        { status: 0, text: '待支付', data: [], loadFinish: false },
-        { status: 1, text: '待检测', data: [], loadFinish: false },
-        { status: 2, text: '查报告', data: [], loadFinish: false }],
+        { status: 0, text: 'tab1', data: [], loadFinish: false },
+        { status: 1, text: 'tab2', data: [], loadFinish: false },
+        { status: 2, text: 'tab3', data: [], loadFinish: false }],
       start: 0,
       pageNo: 1,
       pageSize: 20,
