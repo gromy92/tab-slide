@@ -5,7 +5,6 @@
         :overFlowScroll="false"
         :tabWidth="70"
         @changeSlide="changeSlide"
-         v-loading.fullscreen="loading" loading-text="加载中..." loading-spinner="data-loading"
         >
             <tab-panel :lable="panel.text" :index="index" v-for="(panel,index) in tabData" ref="scroll" :key="index">
 
@@ -16,7 +15,6 @@
 <script>
 import TabSlide from '@/components/tabSlide/tab-slide.vue'
 import tabPanel from '@/components/tabSlide/tab-panel.vue'
-// import { orderListData } from '@/gene/api/moduData.js';
 export default {
   components: {
     TabSlide,
